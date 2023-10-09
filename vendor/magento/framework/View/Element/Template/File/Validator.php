@@ -138,7 +138,7 @@ class Validator
         }
 
         foreach ($directories as $directory) {
-            if ($directory !== null && 0 === strpos($realPath, $directory)) {
+            if (0 === strpos($realPath, $directory)) {
                 return true;
             }
         }
